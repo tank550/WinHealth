@@ -4,45 +4,56 @@
     tools:ignore="ExtraText">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
+        android:banner="@mipmap/login"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:banner="@mipmap/login"
+        android:icon="@mipmap/win"
         android:label="@string/app_name"
-        android:icon="@mipmap/login"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
-
+        <activity
+            android:name=".Form_demande"
+            android:exported="false" />
+        <activity
+            android:name=".Logout"
+            android:exported="false" />
+        <activity
+            android:name=".notif"
+            android:exported="false" />
+        <activity
+            android:name=".Questionnaire"
+            android:exported="false" />
+        <activity
+            android:name=".fragvide"
+            android:exported="true" />
+        <activity
+            android:name=".Verifier_sang"
+            android:exported="false" />
         <activity
             android:name=".StartPage"
             android:exported="true"
             tools:ignore="IntentFilterExportedReceiver">
             <intent-filter>
-
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Login"
-            android:exported="false">
-
-        </activity>
-
-        <activity android:name=".SignUp"
-            android:exported="false">
-
-        </activity>
-        <activity android:name=".Acceuil"
-            android:exported="false">
-
-        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="true" />
     </application>
 
 </manifest>

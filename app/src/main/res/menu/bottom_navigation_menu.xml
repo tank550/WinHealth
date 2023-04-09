@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:name="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/navigation_home"/>
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/blood"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/navigation_search"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_notification"
+        android:icon="@drawable/navigation_notification"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/navigation_account"
+        android:title="" />
+</menu>

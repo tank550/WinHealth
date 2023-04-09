@@ -11,4 +11,8 @@
         android:summary="Mot de passe"
         android:defaultValue=""
         android:inputType="textPassword"/>
+    <EditTextPreference
+        android:key="type"
+        android:title="Type"
+        android:defaultValue=""/>
 </PreferenceScreen>

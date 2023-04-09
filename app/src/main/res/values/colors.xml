@@ -8,4 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="rouge">#FFC9C9C0</color>
+    <color name="roge">#FF0000</color>
+    <color name="bottom_nav_item_color_selected">#FFE9717D</color>
+
 </resources>

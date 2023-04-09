@@ -2,7 +2,22 @@
     <string name="app_name">WinHealth</string>
     <string name="prenom">Prenom :</string>
     <color name="red">#FFE9717D</color>
-    <string name="pass">textVisiblePassword</string>
+    <string name="pass">text</string>
     <string name="passe">textPassword</string>
     <string name="inscrire">S\'inscrire ?</string>
+    <string name="visible">VISIBLE</string>
+    <string name="gone">GONE</string>
+    <string name="recherche">Rechercher</string>
+    <string name="map">Map</string>
+    <string name="notification">Notification</string>
+    <string name="account">Account</string>
+    <string name="title_home">Accueil</string>
+    <string name="title_map">Faire un don</string>
+    <string name="title_search">Rechercher</string>
+    <string name="title_notification">Notification</string>
+    <string name="title_account">Profil</string>
+    <string name="vert">#096A09</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nodisponible">Aucun centre disponible dans cette zone. Essayez une autre zone.</string>
 </resources>

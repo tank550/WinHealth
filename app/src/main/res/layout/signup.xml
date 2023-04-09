@@ -1,26 +1,28 @@
-<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="2"
+        android:layout_weight="5"
+        android:background="#A21E2D"
         android:gravity="center">
 
         <ImageView
             android:layout_width="200sp"
             android:layout_height="100sp"
-            android:src="@mipmap/login" />
+            android:src="@mipmap/win" />
 
     </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,152 +33,241 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/ins"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Inscription"
-                    android:textSize="25sp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="20dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:id="@+id/ins"
-                    android:textColor="@color/red"/>
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Inscription"
+                    android:textColor="#A21E2D"
+                    android:textSize="25sp" />
 
                 <EditText
                     android:id="@+id/nom"
                     android:layout_width="300sp"
                     android:layout_height="50sp"
-                    android:layout_centerHorizontal="true"
                     android:layout_below="@id/ins"
-                    android:translationX="0dp"
-                    android:layout_marginTop="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:hint="Nom :"
                     android:inputType="textPersonName"
                     android:singleLine="true"
-                    android:hint="Nom :"
+                    android:translationX="0dp"
                     tools:targetApi="s" />
+
                 <EditText
                     android:id="@+id/prenom"
                     android:layout_width="300sp"
                     android:layout_height="50sp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="20dp"
-                    android:translationX="0dp"
                     android:layout_below="@id/nom"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
                     android:hint="Prenom :"
                     android:inputType="textPersonName"
                     android:singleLine="true"
+                    android:translationX="0dp"
                     tools:targetApi="s" />
+
                 <TextView
+                    android:id="@+id/se"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sexe :"
-                    android:textSize="20sp"
-                    android:layout_alignLeft="@id/prenom"
                     android:layout_below="@id/prenom"
-                    android:layout_marginTop="20dp"
-                    android:id="@+id/se"
-                    android:layout_marginBottom="20dp"/>
+                    android:layout_alignLeft="@id/prenom"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Sexe :"
+                    android:textSize="20sp" />
+
                 <RadioGroup
+                    android:id="@+id/sex"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
-                    android:orientation="horizontal"
-                    android:layout_centerHorizontal="true"
                     android:layout_below="@id/prenom"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_toRightOf="@+id/se"
-                    android:translationX="10dp"
-                    android:id="@+id/sex"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp">
+                    android:orientation="horizontal"
+                    android:translationX="10dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="M"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp" />
+
                     <RadioButton
+                        android:id="@+id/m"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/m"/>
+                        android:layout_height="wrap_content" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="F"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp" />
+
                     <RadioButton
+                        android:id="@+id/f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/typetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/se"
+                    android:layout_alignLeft="@id/prenom"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Type :"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/type"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/sex"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/se"
+                    android:orientation="horizontal"
+                    android:translationX="10dp">
+
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/f"/>
+                        android:text="Donneur"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/donneur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Docteur"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/docteur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
                 </RadioGroup>
 
                 <EditText
+                    android:id="@+id/user"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
+                    android:layout_below="@id/type"
                     android:layout_centerHorizontal="true"
-                    android:layout_below="@id/se"
                     android:layout_marginTop="0dp"
-                    android:translationX="0dp"
-                    android:inputType="textEmailAddress"
                     android:hint="Nom d'utilisateur :"
-                    android:id="@+id/user"
-                    />
+                    android:inputType="textEmailAddress"
+                    android:translationX="0dp" />
+
                 <TextView
+                    android:id="@+id/uterror"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/uterror"
                     android:layout_below="@id/user"
                     android:layout_centerHorizontal="true"
                     android:textColor="@color/black" />
+
                 <EditText
-                    android:layout_width="300dp"
-                    android:layout_height="50dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_below="@id/uterror"
-                    android:layout_marginTop="0dp"
-                    android:translationX="0dp"
-                    android:inputType="textEmailAddress"
-                    android:hint="Email :"
                     android:id="@+id/mail"
-                    />
-                <EditText
                     android:layout_width="300dp"
                     android:layout_height="50dp"
+                    android:layout_below="@id/uterror"
                     android:layout_centerHorizontal="true"
-                    android:layout_below="@id/mail"
                     android:layout_marginTop="0dp"
-                    android:translationX="0dp"
+                    android:hint="Email :"
+                    android:inputType="textEmailAddress"
+                    android:translationX="0dp" />
+
+                <EditText
                     android:id="@+id/passe"
-                    android:inputType="textPassword"
-                    android:hint="Mot de Passe :"
-                    />
-                <EditText
                     android:layout_width="300dp"
                     android:layout_height="50dp"
+                    android:layout_below="@id/mail"
                     android:layout_centerHorizontal="true"
-                    android:layout_below="@id/passe"
                     android:layout_marginTop="0dp"
-                    android:translationX="0dp"
-                    android:id="@+id/confpasse"
+                    android:hint="Mot de Passe :"
                     android:inputType="textPassword"
+                    android:translationX="0dp" />
+
+                <EditText
+                    android:id="@+id/confpasse"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/passe"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
                     android:hint=" Confirmer Mot de Passe :"
-                    />
+                    android:inputType="textPassword"
+                    android:translationX="0dp" />
+
+                <EditText
+                    android:id="@+id/matricule"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/confpasse"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:hint=" Matricule:"
+                    android:inputType="text"
+                    android:visibility="gone"
+                    android:translationX="0dp" />
+                <EditText
+                    android:id="@+id/addresse"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/matricule"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:hint="Addresse :"
+                    android:inputType="text"
+                    android:translationX="0dp" />
+                <EditText
+                    android:id="@+id/tel"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/addresse"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:hint="Telephone :"
+                    android:inputType="number"
+                    android:translationX="0dp" />
+
+
                 <Button
+                    android:id="@+id/bout"
                     android:layout_width="120dp"
                     android:layout_height="40dp"
-                    android:background="@drawable/radius"
-                    android:backgroundTint="@color/red"
-                    android:text="S'inscrire"
-                    android:textAllCaps="false"
-                    android:textColor="@android:color/white"
+                    android:layout_below="@id/tel"
                     android:layout_alignLeft="@id/passe"
-                    android:layout_below="@id/confpasse"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="100dp"
-                    android:id="@+id/bout"
-                    android:gravity="center"/>
+                    android:background="@drawable/radius"
+                    android:backgroundTint="#A21E2D"
+                    android:gravity="center"
+                    android:text="S'inscrire"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
                 <ImageView
+                    android:id="@+id/eye"
                     android:layout_width="40dp"
                     android:layout_height="23dp"
                     android:layout_alignRight="@id/passe"
@@ -186,6 +277,7 @@
                     android:src="@mipmap/blindpx" />
 
                 <ImageView
+                    android:id="@+id/eye1"
                     android:layout_width="40dp"
                     android:layout_height="23dp"
                     android:layout_alignRight="@id/confpasse"

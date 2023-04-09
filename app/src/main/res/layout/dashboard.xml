@@ -1,71 +1,41 @@
-<LinearLayout
-    android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A21E2D">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/publie"
+            android:text="WinHealh"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:menu="@menu/bottom_navigation_menu"
+            android:background="#A21E2D"
+            android:layout_below="@id/publie"
+            app:itemIconTint="@drawable/bottom_navigation_view_selector"/>
+
+    </RelativeLayout>
+
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/recy"
-        android:layout_weight="1">
-
-    </androidx.recyclerview.widget.RecyclerView>
-
-    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="10"
-        android:gravity="center"
-        android:layout_gravity="center">
-        <ImageView
-            android:id="@+id/home"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_weight="2"
-            android:src="@mipmap/home2"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
-        <ImageView
-            android:id="@+id/search"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:src="@mipmap/search2"
-            android:layout_weight="2"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"/>
-        <ImageView
-            android:id="@+id/maps"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:src="@mipmap/map2"
-            android:layout_weight="2"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
-        <ImageView
-            android:id="@+id/notif"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:src="@mipmap/notif2"
-            android:layout_weight="2"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"/>
-        <ImageView
-            android:id="@+id/histori"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:src="@mipmap/histori2"
-            android:layout_weight="2"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
-        <ImageView
-            android:id="@+id/profil"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:src="@mipmap/profil2"
-            android:layout_weight="2"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:background="@color/rouge"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
 
-    </LinearLayout>
 
 </LinearLayout>

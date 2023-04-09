@@ -1,0 +1,82 @@
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/result"
+    android:backgroundTint="#ffffff"
+    android:layout_marginBottom="8dp"
+    android:background="@color/rouge">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/banque"
+            tools:ignore="NotSibling"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/blood"
+            android:layout_below="@id/banque"
+            android:layout_alignLeft="@id/banque"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/sang"
+            android:background="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/sang"
+            android:layout_toRightOf="@id/sang"
+            android:layout_marginLeft="0dp"
+            android:id="@+id/ty"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/sang"
+            android:layout_toRightOf="@id/ty"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/dispo" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/loca"
+            android:layout_below="@id/sang"
+            android:layout_alignLeft="@id/banque"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/addr"
+            android:background="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/addr"
+            android:layout_toRightOf="@id/addr"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/local"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/icons"
+            android:layout_below="@id/addr"
+            android:layout_alignLeft="@id/banque"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/dist"
+            android:background="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/dist"
+            android:layout_toRightOf="@id/dist"
+            android:layout_marginLeft="10dp"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

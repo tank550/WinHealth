@@ -1,0 +1,97 @@
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/resulta"
+    android:backgroundTint="#ffffff"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/radius"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/radius">
+
+        <TextView
+            android:id="@+id/banquen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:ignore="NotSibling" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/place"
+            android:layout_below="@id/banquen"
+            android:layout_alignLeft="@id/banquen"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/sang"
+            android:background="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/sang"
+            android:layout_toRightOf="@id/sang"
+            android:textColor="@color/black"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/dispon" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/date"
+            android:layout_below="@id/sang"
+            android:layout_alignLeft="@id/banquen"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/addr"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/addr"
+            android:layout_toRightOf="@id/addr"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/localn"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/heure"
+            android:layout_below="@id/addr"
+            android:layout_alignLeft="@id/banquen"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/dist"
+            android:background="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/dist"
+            android:layout_toRightOf="@id/dist"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/heurn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/banquen"
+            android:layout_alignBottom="@+id/banquen"
+            android:textColor="@color/black"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/pas"
+            />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

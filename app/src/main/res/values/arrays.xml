@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="options">
+        <item>Cotonou</item>
+        <item>Calavi</item>
+        <item>Bohicon</item>
+        <item>Parakou</item>
+    </string-array>
+</resources>

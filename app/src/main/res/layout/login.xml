@@ -1,0 +1,115 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/login" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:text="Connexion"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/red"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/mail"
+                android:layout_width="270dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textEmailAddress"
+                android:hint="Nom d'utilisateur ou Email :" />
+            <EditText
+                android:layout_width="270dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:layout_centerInParent="false"
+                android:layout_below="@id/mail"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPassword"
+                android:id="@+id/mot"
+                android:hint="Mot de passe :"/>
+
+            <Button
+                android:id="@+id/bout"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/mot"
+                android:layout_alignLeft="@id/mot"
+                android:layout_marginLeft="-1dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/red"
+                android:gravity="center"
+                android:text="Se connecter"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bout"
+                android:layout_alignRight="@id/mot"
+                android:clickable="true"
+                android:minHeight="48dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/inscrire"
+                android:textColor="@color/red"
+                android:id="@+id/ins"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/eye"
+                android:layout_width="40dp"
+                android:layout_height="23dp"
+                android:layout_alignRight="@id/mot"
+                android:layout_alignBottom="@id/mot"
+                android:layout_marginRight="-4dp"
+                android:layout_marginBottom="12dp"
+                android:src="@mipmap/blindpx" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

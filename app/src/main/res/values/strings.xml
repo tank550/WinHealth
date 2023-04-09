@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WinHealth</string>
+    <string name="prenom">Prenom :</string>
+    <color name="red">#FFE9717D</color>
+    <string name="pass">textVisiblePassword</string>
+    <string name="passe">textPassword</string>
+    <string name="inscrire">S\'inscrire ?</string>
+</resources>

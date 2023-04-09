@@ -1,0 +1,204 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="200sp"
+            android:layout_height="100sp"
+            android:src="@mipmap/login" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inscription"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/ins"
+                    android:textColor="@color/red"/>
+
+                <EditText
+                    android:id="@+id/nom"
+                    android:layout_width="300sp"
+                    android:layout_height="50sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/ins"
+                    android:translationX="0dp"
+                    android:layout_marginTop="50dp"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+                    android:hint="Nom :"
+                    tools:targetApi="s" />
+                <EditText
+                    android:id="@+id/prenom"
+                    android:layout_width="300sp"
+                    android:layout_height="50sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:translationX="0dp"
+                    android:layout_below="@id/nom"
+                    android:hint="Prenom :"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+                    tools:targetApi="s" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sexe :"
+                    android:textSize="20sp"
+                    android:layout_alignLeft="@id/prenom"
+                    android:layout_below="@id/prenom"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/se"
+                    android:layout_marginBottom="20dp"/>
+                <RadioGroup
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/prenom"
+                    android:layout_toRightOf="@+id/se"
+                    android:translationX="10dp"
+                    android:id="@+id/sex"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M"
+                        android:textSize="15sp"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/m"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="F"
+                        android:textSize="15sp"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/f"/>
+                </RadioGroup>
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/se"
+                    android:layout_marginTop="0dp"
+                    android:translationX="0dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="Nom d'utilisateur :"
+                    android:id="@+id/user"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/uterror"
+                    android:layout_below="@id/user"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/uterror"
+                    android:layout_marginTop="0dp"
+                    android:translationX="0dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email :"
+                    android:id="@+id/mail"
+                    />
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/mail"
+                    android:layout_marginTop="0dp"
+                    android:translationX="0dp"
+                    android:id="@+id/passe"
+                    android:inputType="textPassword"
+                    android:hint="Mot de Passe :"
+                    />
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/passe"
+                    android:layout_marginTop="0dp"
+                    android:translationX="0dp"
+                    android:id="@+id/confpasse"
+                    android:inputType="textPassword"
+                    android:hint=" Confirmer Mot de Passe :"
+                    />
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/radius"
+                    android:backgroundTint="@color/red"
+                    android:text="S'inscrire"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_alignLeft="@id/passe"
+                    android:layout_below="@id/confpasse"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="100dp"
+                    android:id="@+id/bout"
+                    android:gravity="center"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="23dp"
+                    android:layout_alignRight="@id/passe"
+                    android:layout_alignBottom="@id/passe"
+                    android:layout_marginRight="-4dp"
+                    android:layout_marginBottom="12dp"
+                    android:src="@mipmap/blindpx" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="23dp"
+                    android:layout_alignRight="@id/confpasse"
+                    android:layout_alignBottom="@id/confpasse"
+                    android:layout_marginRight="-4dp"
+                    android:layout_marginBottom="12dp"
+                    android:src="@mipmap/blindpx" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
